@@ -4,4 +4,4 @@ Git start write add my sine song
 Git add rows
 Git has a mutable index called stage
 Git tracks changes of files.
-Myboss
+Myboss is stupid still prefes SVN
