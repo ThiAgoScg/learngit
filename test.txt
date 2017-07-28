@@ -7,7 +7,7 @@ public class TestGitLibrary{
   SCG giksafdkljlksfdkjskdfallsdflvnasdlsfl
   sdflkjlksdfjkljsdfa******
   **^**
-
+  has Class
   dfsasfdak 
    
      
