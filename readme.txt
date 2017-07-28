@@ -5,3 +5,4 @@ Git add rows
 Git has a mutable index called stage
 Git tracks changes of files.
 Myboss is stupid still prefes SVN
+Create a new branch is quick
