@@ -7,8 +7,4 @@ Git tracks changes of files.
 Myboss is stupid still prefes SVN
 add branch dev
 add a rows
-<<<<<<< HEAD
 Creating a new branch is quick AND simple
-=======
-Creating a new branch is quick AND simple
->>>>>>> feature1
