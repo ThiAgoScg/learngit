@@ -16,7 +16,8 @@ import com.scg.base.service.SysuserService;
 /**
  * hello java hello world
  * @author Administrator
- *
+ * hello dev1123123
+ * gxd
  */
 @Controller
 public class LoginController {
