@@ -13,7 +13,11 @@ import com.scg.base.process.context.Config;
 import com.scg.base.process.result.ResultInfo;
 import com.scg.base.process.result.ResultUtil;
 import com.scg.base.service.SysuserService;
-
+/**
+ * hello java hello world
+ * @author Administrator
+ *
+ */
 @Controller
 public class LoginController {
 	@Autowired
