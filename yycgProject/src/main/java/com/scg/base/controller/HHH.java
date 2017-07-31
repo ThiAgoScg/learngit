@@ -14,6 +14,11 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
 public class HHH {
+	/**
+	 * @author scg
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException {
 		//创建一个SXSSFworkBook
 		SXSSFWorkbook workbook = new SXSSFWorkbook(-1);
