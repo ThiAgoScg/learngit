@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<classPathEntry location="F:/360Downloads/maven/repo/com/oracle/ojdbc14/10.2.0.1.0/ojdbc14-10.2.0.1.0.jar" /> 
+  <context id="context1" >
+    <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver" connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:XE" userId="scg" password="scg" />
+    <javaModelGenerator targetPackage="com.scg.base.db.model" targetProject="yycgProject" />
+    <sqlMapGenerator targetPackage="com.scg.base.db.mapper" targetProject="yycgProject" />    
+    <javaClientGenerator targetPackage="com.scg.base.db.dao" targetProject="yycgProject" type="XMLMAPPER" />
+    
+  <table schema="XE" tableName="bss_sys_area"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"  enableSelectByExample="false" selectByExampleQueryId="false" ></table>
+    
+ </context>
+</generatorConfiguration>

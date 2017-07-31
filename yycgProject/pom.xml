@@ -1,0 +1,210 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+	  	<relativePath>../yycgParent</relativePath>
+	  	<groupId>yycg</groupId>
+		<artifactId>yycgParent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  
+ <!--  <groupId>yycg</groupId> -->
+  <artifactId>yycgProject</artifactId>
+  <packaging>war</packaging>
+ <!--  <version>0.0.1-SNAPSHOT</version> -->
+  <name>yycgProject Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+  	<slf4j.version>1.7.12</slf4j.version>    
+    <log4j.version>1.2.17</log4j.version> 
+  </properties>
+  
+  
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- 依赖技术架构 -->
+    <dependency>
+   	  <groupId>yycg</groupId>
+	  <artifactId>springmybatis</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <!-- util的架构 -->
+    <dependency>
+    	<groupId>yycg</groupId>
+		<artifactId>publicutil</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>  
+        <groupId>com.oracle</groupId>  
+        <artifactId>ojdbc14</artifactId>  
+        <version>10.2.0.1.0</version>  
+    </dependency>  
+    <!-- 数据库驱动 -->    
+            <dependency>    
+                <groupId>mysql</groupId>    
+                <artifactId>mysql-connector-java</artifactId>    
+                <version>5.1.35</version>    
+            </dependency>    
+            <!-- 导入dbcp的jar包，用来在applicationContext.xml中配置数据库 -->    
+            <dependency>    
+                <groupId>commons-dbcp</groupId>    
+                <artifactId>commons-dbcp</artifactId>    
+                <version>1.4</version>    
+            </dependency>    
+            <!-- jstl标签类 -->    
+            <dependency>    
+                <groupId>jstl</groupId>    
+                <artifactId>jstl</artifactId>    
+                <version>1.2</version>    
+            </dependency>    
+            <!-- log start -->    
+            <dependency>    
+                <groupId>log4j</groupId>    
+                <artifactId>log4j</artifactId>    
+                <version>${log4j.version}</version>    
+            </dependency>    
+            <dependency>    
+                <groupId>org.slf4j</groupId>    
+                <artifactId>slf4j-api</artifactId>    
+                <version>${slf4j.version}</version>    
+            </dependency>    
+            <dependency>    
+                <groupId>org.slf4j</groupId>    
+                <artifactId>slf4j-log4j12</artifactId>    
+                <version>${slf4j.version}</version>    
+            </dependency>    
+            <!-- log END -->    
+            <!-- Json  -->    
+            <!-- 格式化对象，方便输出日志 -->    
+            <dependency>    
+                <groupId>com.alibaba</groupId>    
+                <artifactId>fastjson</artifactId>    
+                <version>1.2.6</version>    
+            </dependency>    
+            <dependency>    
+                <groupId>org.codehaus.jackson</groupId>    
+                <artifactId>jackson-mapper-asl</artifactId>    
+                <version>1.9.13</version>    
+            </dependency>    
+            <!-- 上传组件包 start -->    
+            <dependency>    
+                <groupId>commons-fileupload</groupId>    
+                <artifactId>commons-fileupload</artifactId>    
+                <version>1.3.1</version>    
+            </dependency>    
+            <dependency>    
+                <groupId>commons-io</groupId>    
+                <artifactId>commons-io</artifactId>    
+                <version>2.4</version>    
+            </dependency>    
+            <dependency>    
+                <groupId>commons-codec</groupId>    
+                <artifactId>commons-codec</artifactId>    
+                <version>1.10</version>    
+            </dependency>    
+            <!-- dwr的AJAX框架 -->
+            <dependency>
+            	<groupId>org.directwebremoting</groupId>
+            	<artifactId>dwr</artifactId>
+            	<version>3.0.M1</version>
+            </dependency>
+            <!-- 上传组件包 end --> 
+            <dependency>
+					<groupId>commons-configuration</groupId>
+					<artifactId>commons-configuration</artifactId>
+					<version>1.6</version>
+			</dependency>   
+			 <dependency>
+			    <groupId>org.aspectj</groupId>
+			    <artifactId>aspectjweaver</artifactId>
+			    <version>1.7.4</version>
+			</dependency>
+			<dependency>
+			    <groupId>com.github.pagehelper</groupId>
+			    <artifactId>pagehelper</artifactId>
+			    <version>4.1.4</version>
+			</dependency>
+			<!-- Redis -->  
+			<dependency>  
+			    <groupId>org.springframework.data</groupId>  
+			    <artifactId>spring-data-redis</artifactId>  
+			    <version>1.7.2.RELEASE</version>  
+			</dependency>  
+			<dependency>  
+			    <groupId>redis.clients</groupId>  
+			    <artifactId>jedis</artifactId>  
+			    <version>2.9.0</version>  
+			</dependency> 
+			<dependency>
+			    <groupId>org.mongodb</groupId>
+			    <artifactId>mongo-java-driver</artifactId>
+			    <version>3.4.0</version>
+			</dependency>
+			<!-- mybatis的逆向工程 -->
+			<dependency>
+			    <groupId>org.mybatis.generator</groupId>
+			    <artifactId>mybatis-generator-core</artifactId>
+			    <version>1.3.5</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-maven-plugin</artifactId>
+				<version>1.3.5</version>
+			</dependency>
+  	</dependencies>
+  <build>
+    <finalName>yycgProject</finalName>
+    <plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+				<encoding>UTF-8</encoding>
+			</configuration>
+		</plugin>
+		<!-- war包生成插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warSourceDirectory>src/main/webapp</warSourceDirectory>
+				</configuration>
+			</plugin>
+			<!-- tomcat运行插件 -->
+			<plugin>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven2-plugin</artifactId>
+				<version>1.2.3</version>
+				<configuration>
+					<container>
+						<containerId>tomcat7x</containerId>
+						<home>D:\Tomcat\apache-tomcat-7.0.62</home>
+					</container>
+					<configuration>
+						<type>existing</type>
+						<home>D:\Tomcat\apache-tomcat-7.0.62</home>
+					</configuration>
+				</configuration>
+				<executions>
+					<execution>
+						<id>cargo-run</id>
+						<phase>install</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+	</plugins>
+  </build>
+</project>
